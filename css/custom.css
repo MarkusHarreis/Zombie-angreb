@@ -11,7 +11,7 @@
   --font-logotype-size: 2rem;
 
   /* Global menu */
-  --color-menu-bg: #6F90EB;
+  --color-menu-bg: #6f90eb;
   /* Links */
   --color-link-bg: #fffae2;
   --color-link-hover: #fff; /* used */
@@ -42,7 +42,7 @@
   /* news-cards */
   --color-news-bg: #fffae2;
   --color-news-bg-inverted: #dbe2f5;
-  --color-cta-newscard-bg:#ffa680;
+  --color-cta-newscard-bg: #ffa680;
   --color-cta-newscard-bg-inverted: #6f90eb;
 
   /* Fonts */
@@ -50,10 +50,10 @@
   --font-weight-light: 300;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
-  --font-weight-bold: 800; 
+  --font-weight-bold: 800;
 
   /* Text sizes */
-  --logotype-size: 1rem:
+  --logotype-size: 1rem;
   --headline1-size: 1rem;
   --headline2-size: 1.5rem;
   --headline3-size: 1.5rem;
