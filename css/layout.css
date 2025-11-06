@@ -65,7 +65,8 @@ footer ul {
     grid-template-columns: 6fr 3fr;
     grid-template-rows: auto 1fr auto;
   }
-  #instruction > main {
+  #instruction > main,
+  #register > main {
     grid-template-columns: 5fr 3fr;
     grid-template-rows: auto auto 1fr auto;
   }
