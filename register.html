@@ -37,8 +37,8 @@
       <h1>INDBERET</h1>
       <section id="form-section">
         <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
+          <h2>Hvilken epidemi har ramt dig?</h2>
+          <p>Udfyld spørgeskema for at få svar</p>
         </article>
         <form id="webform"></form>
       </section>
@@ -48,6 +48,65 @@
           <p class="placeholder">Opsummering</p>
         </article>
       </section>
+      <form>
+        <label> First name</label>
+        <input type="text" />
+
+        <label> Last name</label>
+        <input type="text" />
+
+        <label> Email</label>
+        <input type="email" />
+
+        <fieldset>
+          <legend>
+            <h3>Hvilke symptomer har du?</h3>
+          </legend>
+          <label for="hovedpine">
+            <input
+              type="checkbox"
+              id="hovedpine"
+              name="symptom"
+              value="hovedpine"
+            />
+            Hovedpine
+          </label>
+          <label for="Kvamle">
+            <input type="checkbox" id="Kvalme" name="symptom" value="Kvamle" />
+            Kvamle
+          </label>
+
+          <label for="Sløret syhn">
+            <input
+              type="checkbox"
+              id="Sløret syn"
+              name="symptom"
+              value="Sløret syn"
+            />
+            Sløret syn
+          </label>
+
+          <label for="Hjerte banken">
+            <input
+              type="checkbox"
+              id="Hjerte banken"
+              name="symptom"
+              value="Hjerte banken"
+            />
+            Hjerte banken
+          </label>
+        </fieldset>
+
+        <label for="andre"> <h4>Andre symptomer?</h4></label>
+        <textarea name="Andre" id="andre"></textarea>
+
+        <label for="my-id">
+          <input id="my-id" type="checkbox" />
+          Accept terms
+        </label>
+
+        <button>Send svar</button>
+      </form>
     </main>
     <footer>
       <nav class="some">
@@ -76,6 +135,6 @@
       </nav>
     </footer>
     <script src="js/burger.js"></script>
-    <!-- <script src="js/main.js"></script> -->
+    <script src="js/main.js"></script>
   </body>
 </html>
