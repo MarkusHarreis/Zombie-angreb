@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
-    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/forms.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -40,7 +40,6 @@
           <h2>Hvilken epidemi har ramt dig?</h2>
           <p>Udfyld spørgeskema for at få svar</p>
         </article>
-        <form id="webform"></form>
       </section>
       <section id="form-summary">
         <h2>Summary</h2>
@@ -48,62 +47,111 @@
           <p class="placeholder">Opsummering</p>
         </article>
       </section>
-      <form>
-        <label> First name</label>
-        <input type="text" />
 
-        <label> Last name</label>
-        <input type="text" />
+      <form aria-label="EK signup form">
+        <div class="form-group">
+          <label for="first_name"> First name</label>
 
-        <label> Email</label>
-        <input type="email" />
+          <input
+            type="text"
+            id="first_name"
+            name="first_name"
+            aria-describedby="fname-error"
+            required
+          />
+          <p class="error-message" id="fname-error">Please enter a value</p>
+        </div>
 
-        <fieldset>
-          <legend>
-            <h3>Hvilke symptomer har du?</h3>
-          </legend>
-          <label for="hovedpine">
+        <div class="form-group">
+          <label for="last_name"> Last name</label>
+          <input
+            type="text"
+            id="last_name"
+            name="last_name"
+            aria-describedby="lname-error"
+            required
+          />
+          <p class="error-message" id="fname-error">Please enter a value</p>
+        </div>
+
+        <div class="form-group">
+          <label for="email"> Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            aria-describedby="email-error"
+            required
+          />
+          <p class="error-message" id="fname-error">Please enter a value</p>
+        </div>
+
+        <div class="form-group">
+          <fieldset>
+            <legend>
+              <h3>Hvilke symptomer har du?</h3>
+            </legend>
+            <label for="hovedpine">
+              <input
+                type="checkbox"
+                id="hovedpine"
+                name="symptom"
+                value="hovedpine"
+              />
+              Hovedpine
+            </label>
+            <label for="Kvamle">
+              <input
+                type="checkbox"
+                id="Kvalme"
+                name="symptom"
+                value="Kvamle"
+              />
+              Kvamle
+            </label>
+
+            <label for="Sløret syhn">
+              <input
+                type="checkbox"
+                id="Sløret syn"
+                name="symptom"
+                value="Sløret syn"
+              />
+              Sløret syn
+            </label>
+
+            <label for="Hjerte banken">
+              <input
+                type="checkbox"
+                id="Hjerte banken"
+                name="symptom"
+                value="Hjerte banken"
+              />
+              Hjerte banken
+            </label>
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <label for="andre"> <h4>Andre symptomer?</h4></label>
+          <textarea name="Andre" id="andre"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="accept_terms">
             <input
+              id="my-id"
               type="checkbox"
-              id="hovedpine"
-              name="symptom"
-              value="hovedpine"
+              id="accept_terms"
+              name="accept_terms"
+              value="yes"
+              aria-describedby="terms-error"
+              required
             />
-            Hovedpine
+            Accept terms
           </label>
-          <label for="Kvamle">
-            <input type="checkbox" id="Kvalme" name="symptom" value="Kvamle" />
-            Kvamle
-          </label>
-
-          <label for="Sløret syhn">
-            <input
-              type="checkbox"
-              id="Sløret syn"
-              name="symptom"
-              value="Sløret syn"
-            />
-            Sløret syn
-          </label>
-
-          <label for="Hjerte banken">
-            <input
-              type="checkbox"
-              id="Hjerte banken"
-              name="symptom"
-              value="Hjerte banken"
-            />
-            Hjerte banken
-          </label>
-        </fieldset>
-
-        <label for="andre"> <h4>Andre symptomer?</h4></label>
-        <textarea name="Andre" id="andre"></textarea>
-
-        <label for="my-id">
-          <input id="my-id" type="checkbox" />
-          Accept terms
-        </label>
+          <p class="error-message" id="fname-error">Please enter a value</p>
+        </div>
 
         <button>Send svar</button>
       </form>
