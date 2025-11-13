@@ -67,3 +67,12 @@
   --color-infobox-1-bg: #fceb94;
   --color-infobox-2-bg: #def5bd;
 }
+
+[popover]:popover-open {
+  display: grid;
+}
+[popover] {
+  max-height: 90vh;
+  max-width: 50ch;
+  width: 90vw;
+}
