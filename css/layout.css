@@ -81,4 +81,8 @@ footer ul {
   footer {
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .output {
+    order: 1;
+  }
 }

@@ -108,6 +108,7 @@ form {
 
 fieldset {
   border-radius: 6px;
+  line-height: 1.6;
 }
 
 .andre {
@@ -116,8 +117,24 @@ fieldset {
   gap: 0.25rlh;
   justify-self: start;
   border-radius: 6px;
+  border-color: #ccc;
 }
 
 textarea {
   border-radius: 6px;
+  border-color: #ccc;
+}
+
+.sym {
+  margin-top: 10px;
+  background-color: #fffae2;
+  padding: 1rlh;
+  border-radius: 8px;
+  gap: 0.5rlh;
+  font-size: 17px;
+  line-height: 2;
+}
+
+form {
+  accent-color: #ff4b00;
 }
