@@ -79,6 +79,7 @@
   text-decoration: none;
   width: max-content;
   border-radius: var(--border-radius);
+  border: 0;
 }
 .news_card .cta_btn {
   background-color: var(--color-cta-newscard-bg);

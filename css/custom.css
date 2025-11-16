@@ -70,9 +70,73 @@
 
 [popover]:popover-open {
   display: grid;
+  margin: auto;
+  opacity: 1;
+  background-color: #fffae2;
 }
 [popover] {
   max-height: 90vh;
   max-width: 50ch;
   width: 90vw;
+  text-align: left;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+::backdrop {
+  opacity: 0;
+  transition: 0.5s allow-discrete;
+  background: rgba(69, 69, 69, 0.533);
+}
+
+:popover-open::backdrop {
+  opacity: 1;
+}
+
+@starting-style {
+  :popover-open::backdrop {
+    opacity: 0;
+  }
+}
+
+.pop_text {
+  padding: 10px;
+}
+
+summary::after {
+  content: "+";
+  font-family: system-ui;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+[open] summary::after {
+  content: "–";
+}
+::details-content {
+  height: 0;
+  overflow: clip;
+  transition: 0.3s allow-discrete;
+}
+
+[open]::details-content {
+  height: auto;
+}
+
+.text_teaser {
+  padding-top: 10px;
+}
+
+.text_teaser p {
+  background-color: #fffae2;
+  border-radius: 12px;
+  padding: 10px;
+  max-width: 355px;
+}
+
+.cta_btn:hover {
+  opacity: 90%;
+  transform: scale(1.03);
 }

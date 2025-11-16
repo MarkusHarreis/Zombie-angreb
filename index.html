@@ -50,7 +50,17 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
               magnam ducimus ea, sed minima asperiores.
             </p>
-            <a href="" class="cta_btn">Se mere</a>
+            <details name="my-detail">
+              <summary class="cta_btn">Se mere</summary>
+              <div class="text_teaser">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Cupiditate culpa odit soluta commodi iure, rem laborum odio
+                  voluptatem nobis quos perferendis amet pariatur dolores
+                  blanditiis inventore, ab eum consequatur quasi.
+                </p>
+              </div>
+            </details>
           </div>
         </article>
         <article class="daily_card">
@@ -61,7 +71,17 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
               magnam ducimus ea, sed minima asperiores.
             </p>
-            <a href="" class="cta_btn">Se mere</a>
+            <details name="my-detail">
+              <summary class="cta_btn">Se mere</summary>
+              <div class="text_teaser">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Reiciendis, repellat quidem sint iusto deleniti culpa atque
+                  incidunt, maiores inventore optio corrupti, officiis qui
+                  deserunt saepe explicabo fugit nihil consequuntur dolores.
+                </p>
+              </div>
+            </details>
           </div>
         </article>
       </section>
@@ -70,19 +90,43 @@
           <h3>Nyhed</h3>
           <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
           <img src="img/isolation.webp" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <button class="cta_btn" popovertarget="popup">Læs mere</button>
+          <div popover id="popup">
+            <p class="pop_text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+              pariatur quam vero quae dolores veniam error nihil saepe quos, sed
+              reprehenderit, quasi iure laboriosam adipisci ipsum. Eveniet unde
+              autem provident!
+            </p>
+          </div>
         </article>
         <article class="news_card">
           <h3>Nyhed</h3>
           <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
           <img src="img/Kuru til eu.webp" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <button class="cta_btn" popovertarget="popup">Læs mere</button>
+          <div popover id="popup">
+            <p class="pop_text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Necessitatibus totam dolore, perspiciatis ut dolorem est quas
+              suscipit dolor culpa veritatis ipsa fugit, harum aspernatur magni
+              non cum recusandae sit voluptatem?
+            </p>
+          </div>
         </article>
         <article class="news_card">
           <h3>Nyhed</h3>
           <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
           <img src="img/Forskere.webp" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <button class="cta_btn" popovertarget="popup">Læs mere</button>
+          <div popover id="popup">
+            <p class="pop_text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur nihil quibusdam modi, quasi hic repudiandae animi ipsum
+              accusantium consectetur aperiam? Quae quidem dolorum explicabo
+              saepe quasi eligendi reiciendis id expedita?
+            </p>
+          </div>
         </article>
       </section>
     </main>
@@ -114,6 +158,6 @@
       </nav>
     </footer>
     <script src="js/burger.js"></script>
-    <!-- <script src="js/main.js"></script> -->
+    <script src="js/main.js"></script>
   </body>
 </html>
