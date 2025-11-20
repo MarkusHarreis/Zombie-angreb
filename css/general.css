@@ -22,6 +22,7 @@ header {
 #main-disclamer-content {
   display: flex;
   column-gap: 1rem;
+  align-items: center;
 }
 
 main section {
@@ -67,12 +68,12 @@ h3 {
   font-size: var(--headline3-size);
 }
 
-main>h1 {
+main > h1 {
   width: calc(80% - 6rem);
 }
 
 /* NAVIGATION STRUCTURES */
-header>nav {
+header > nav {
   height: 100%;
   background-color: var(--color-menu-bg);
 }
@@ -96,15 +97,24 @@ nav a {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: 3.6rem;
+  height: 3.4rem;
 }
 
-#logotype-wrapper>a {
+#logotype-wrapper > a {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   color: var(--color-text-logotype);
   font-size: var(--font-logotype-size);
   font-weight: var(--font-weight-medium);
   width: max-content;
   margin-left: 1rem;
+}
+
+#logotype-wrapper svg {
+  height: 2.7rem;
+  width: auto;
+  padding-left: 10px;
+  padding-top: 2px;
 }
 
 /* Global menu */
@@ -118,7 +128,7 @@ header nav li a {
 }
 
 /* Pilen efter menu-tekst */
-header>nav li>a:after {
+header > nav li > a:after {
   content: " \2192";
 }
 
@@ -134,4 +144,17 @@ nav a:active {
 /* FOOTER */
 footer a {
   font-size: 0.7rem;
+}
+
+.trekant {
+  width: 130x;
+  height: 130px;
+  padding-left: 30px;
+}
+
+.dk {
+  font-size: 35px;
+  font-size: var(--font-h1-size);
+  font-weight: var(--font-weight-bold);
+  padding-left: 20px;
 }

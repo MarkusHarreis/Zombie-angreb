@@ -9,10 +9,10 @@
 }
 #form-summary h2 {
   line-height: 3rem;
-  text-align: center;
   background-color: var(--headline-bg-color-inverted);
   color: var(--headline-color-inverted);
   padding-top: 5px;
+  padding-left: 20px;
 }
 #form-summary h3 {
   font-size: 0.8rem;
@@ -32,15 +32,16 @@
 }
 
 button {
-  border: 1px solid #000;
-  background-color: #000;
+  border: 1px solid #ff4b00;
+  background-color: #ff4b00;
   color: #fff;
   border-radius: 6px;
-  padding: 0.25rlh 0.5rlh;
+  padding: 0.4rlh 0.6rlh;
   cursor: pointer;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.269);
 }
 button:hover {
-  background: #222;
+  background: #fc7b44;
 }
 
 .error-message {
@@ -79,18 +80,21 @@ button:hover {
 }
 
 input {
-  border: 1px solid #ccc;
-  border-radius: 6px;
+  border: 2px solid #000000;
+  border-radius: 10px;
   padding: 0.2rlh;
   box-shadow: 0px 1px 2px #0001;
+  background-color: #fffae2;
 }
 
 form {
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 
   .form-group {
-    display: grid;
-    gap: 0.1rlh;
+    display: flex;
+    flex-direction: column;
   }
 
   label:has(input) {
@@ -101,14 +105,29 @@ form {
   }
 }
 
+.emailplads {
+  grid-column: 1 / -1;
+}
+
+.acceptplads {
+  grid-column: 1 / -1;
+}
+
+.Send {
+  grid-column: 1 / -1;
+}
+
 :focus-visible {
   outline: 2px solid #6f90eb;
   outline-offset: 1px;
 }
 
 fieldset {
-  border-radius: 6px;
-  line-height: 1.6;
+  border-radius: 10px;
+  line-height: 2;
+  background-color: #fffae2;
+  border: #000000;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.269);
 }
 
 .andre {
@@ -116,25 +135,37 @@ fieldset {
   align-items: center;
   gap: 0.25rlh;
   justify-self: start;
-  border-radius: 6px;
+  border-radius: 10px;
   border-color: #ccc;
 }
 
 textarea {
-  border-radius: 6px;
-  border-color: #ccc;
+  border-radius: 10px;
+  border: #000000;
+  flex: 1;
+  background-color: #fffae2;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.269);
 }
 
 .sym {
   margin-top: 10px;
-  background-color: #fffae2;
+  background-color: #dbe2f5;
   padding: 1rlh;
   border-radius: 8px;
   gap: 0.5rlh;
   font-size: 17px;
   line-height: 2;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.269);
 }
 
 form {
   accent-color: #ff4b00;
+}
+
+.check {
+  margin: 12px;
+}
+
+.indmeld {
+  padding-right: 60px;
 }
