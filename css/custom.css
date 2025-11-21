@@ -1,6 +1,6 @@
 :root {
   /* Colours */
-  --color-bg: #fceb94; /* page background /*
+  --color-bg: light-dark(#fceb94, #707070); /* page background /*
 
   /* Header */
   --color-head-bg: #ff4b00;
@@ -13,7 +13,7 @@
   /* Global menu */
   --color-menu-bg: #6f90eb;
   /* Links */
-  --color-link-bg: #fffae2;
+  --color-link-bg: light-dark(#fffae2, #494949);
   --color-link-hover: #fff; /* used */
   --color-link-active: #99958f; /* used */
   --border-radius-links: 20px;
@@ -23,12 +23,14 @@
   --font-sub1-size: 1.5rem;
   --font-h2-size: 2rem;
   --font-h3-size: 1rem;
-  --color-headline-bg: #000000;
-  --color-headline-text-page: #fffae2;
+  --color-headline-bg: light-dark(#000000, #fffae2);
+  --color-headline-text-page: light-dark(#fffae2, #272727);
 
   /* Tekst */
-  --color-text: #000000;
-  --color-text-inverted: #fffae2;
+  --color-text: light-dark(#000000, #fffae2);
+  --color-text-inverted: light-dark(#fffae2, #272727);
+  --color-text-form: light-dark(#000000, #fffae2);
+  --color-text-form-check: #272727;
 
   /*  Marginer */
   --margin-head-bottom: 25px;
@@ -37,13 +39,14 @@
   --border-radius: 25px;
 
   /* Cards */
-  --color-card-bg: #ffffff;
+  --color-card-bg: light-dark(#ffffff, #272727);
   --color-cta-card-bg: #ff4b00;
+  --color-card-bg-sym: light-dark(#dbe2f5, #272727);
   /* news-cards */
-  --color-news-bg: #fffae2;
-  --color-news-bg-inverted: #dbe2f5;
-  --color-cta-newscard-bg: #ffa680;
-  --color-cta-newscard-bg-inverted: #6f90eb;
+  --color-news-bg: light-dark(#fffae2, #494949);
+  --color-news-bg-inverted: light-dark(#dbe2f5, #272727);
+  --color-cta-newscard-bg: light-dark(#ffa680, #8f6655);
+  --color-cta-newscard-bg-inverted: light-dark(#6f90eb, #3f4860);
 
   /* Fonts */
   --font-family-sans: "rubik";
@@ -63,9 +66,9 @@
   --form-submit-size: 1rem;
 
   /* Infographics */
-  --color-info-bg: #ffffff;
-  --color-infobox-1-bg: #fceb94;
-  --color-infobox-2-bg: #def5bd;
+  --color-info-bg: light-dark(#ffffff, #272727);
+  --color-infobox-1-bg: light-dark(#fceb94, #777153);
+  --color-infobox-2-bg: light-dark(#def5bd, #586556);
 }
 
 [popover]:popover-open {
@@ -73,10 +76,11 @@
   margin: auto;
   opacity: 1;
   background-color: #fffae2;
+  padding: 40px;
 }
 [popover] {
   max-height: 90vh;
-  max-width: 50ch;
+  max-width: 700px;
   width: 90vw;
   text-align: left;
   border-radius: 12px;
@@ -102,7 +106,11 @@
 }
 
 .pop_text {
-  padding: 10px;
+  padding-top: 20px;
+}
+
+.iso_pop {
+  padding-top: 20px;
 }
 
 summary::after {

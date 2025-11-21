@@ -31,7 +31,7 @@
   padding: 0;
 }
 
-button {
+button.Send {
   border: 1px solid #ff4b00;
   background-color: #ff4b00;
   color: #fff;
@@ -149,7 +149,7 @@ textarea {
 
 .sym {
   margin-top: 10px;
-  background-color: #dbe2f5;
+  background-color: var(--color-card-bg-sym);
   padding: 1rlh;
   border-radius: 8px;
   gap: 0.5rlh;
@@ -160,6 +160,11 @@ textarea {
 
 form {
   accent-color: #ff4b00;
+  color: var(--color-text-form);
+}
+
+form .check {
+  color: var(--color-text-form-check);
 }
 
 .check {
@@ -168,4 +173,8 @@ form {
 
 .indmeld {
   padding-right: 60px;
+}
+
+input[type="checkbox"] {
+  color-scheme: only light;
 }
